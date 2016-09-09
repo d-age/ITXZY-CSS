@@ -1,60 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+
+    <meta IE=EmulateIE9>
     <meta charset="UTF-8">
     <title>IT修真院&nbspCSS</title>
-    <style>
-        #box{
-            width: 50%;
-            margin: 3vw auto;
-        }
-        a:hover{
-            padding-top: 4vw;
-            font-size: 3vw;
-            text-align: center;
-            text-decoration: none;
-            display: block;
-            width: 23%;
-            height: 7.5vw;
-            background-color: deepskyblue;
-            float: left;
-            margin: 0 0 0.5vw 0.5vw;
-            border-radius: 11.5vw;
-        }
-        a{
-            padding-top: 4vw;
-            font-size: 3vw;
-            text-align: center;
-            text-decoration: none;
-            display: block;
-            width: 23%;
-            height: 7.5vw;
-            background-color: gold;
-            float: left;
-            margin: 0 0 0.5vw 0.5vw;
-            border-radius: 1vw;
-        }
+    <!--
+        font 综合属性属性值的顺序:
+            font-style
+            font-variant
+            font-weight
+            font-size/line-height   字体大小必不可少
+            font-family             字体属性必不可少
+    -->
+    <style  type="text/css">
         body{
             background-image: url(images/index-background2.jpg);
             background-size: 100%;
             background-repeat: no-repeat;
         }
+        #box1 {
+            width: 50vw;
+            margin: 3vw auto;
+        }
+        .tasks{
+            font-style: italic;
+            font-family: "Microsoft YaHei";
+            font-weight: bold;
+            font-size: 2.5vw;
+            padding-top: 3vw;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            width: 23%;
+            height: 8.5vw;
+            background-color: gold;
+            float: left;
+            margin: 0 0 0.5vw 0.5vw;
+            border-radius: 0.5vw;
+            opacity:0.85;
+        }
+        .tasks:hover{
+            background-color: skyblue;
+            border-radius: 2vw;
+        }
+
+        #box2 {
+            position: absolute;
+            top:0;
+            left: 8vw;
+            width: 10vw;
+            margin:auto;
+        }
+        .www{
+            font-style: italic;
+            font-family: "Microsoft YaHei";
+            font-weight: bold;
+            font-size: 1.5vw;
+            padding-top: 3vw;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            width: 8vw;
+            height: 5vw;
+            background-color: gold;
+            float: left;
+            border-radius:4vw;
+            margin: 1vw 0 0 0;
+            opacity: 0.85;
+        }
+        .www:hover{
+            background-color: skyblue;
+            border-radius: 3.5vw;
+        }
+
     </style>
 </head>
 <body>
-    <div id="box">
-        <a href="task1.html">task1</a>
-        <a style="background-color: darkgray"></a>
-        <a style="background-color: darkgray"></a>
-        <a style="background-color: darkgray"></a>
-        <a style="background-color: darkgray"></a>
-        <a style="background-color: darkgray"></a>
-        <a style="background-color: darkgray"></a>
-        <a style="background-color: darkgray"></a>
-        <a style="background-color: darkgray"></a>
-        <a style="background-color: darkgray"></a>
-        <a style="background-color: darkgray"></a>
-        <a style="background-color: darkgray"></a>
+    <div id="box1">
+        <a class="tasks" href="task1.html" target="_blank">TASK<br>1</a>
+        <a class="tasks" href="task2.html" target="_blank">TASK<br>2</a>
+        <a class="tasks" style="background-color: darkgray">TASK<br>3</a>
+        <a class="tasks" style="background-color: darkgray">TASK<br>4</a>
+        <a class="tasks" style="background-color: darkgray">TASK<br>5</a>
+        <a class="tasks" style="background-color: darkgray">TASK<br>6</a>
+        <a class="tasks" style="background-color: darkgray">TASK<br>7</a>
+        <a class="tasks" style="background-color: darkgray">TASK<br>8</a>
+        <a class="tasks" style="background-color: darkgray">TASK<br>9</a>
+        <a class="tasks" style="background-color: darkgray">TASK<br>10</a>
+        <a class="tasks" style="background-color: darkgray">TASK<br>11</a>
+        <a class="tasks" style="background-color: darkgray">TASK<br>12</a>
+    </div>
+
+    <div id="box2">
+        <a class="www" href="http://www.jnshu.com/" target="_blank">IT修真院</a>
+        <a class="www" href="http://www.w3school.com.cn/" target="_blank">w3school</a>
+        <a class="www" href="https://www.baidu.com/" target="_blank">baidu</a>
+        <a class="www" href="" target="_blank" style="background-color:darkgrey"></a>
+        <a class="www" href="" target="_blank" style="background-color:darkgrey"></a>
+
     </div>
 </body>
 </html>
